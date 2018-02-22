@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
   <title>Счастливые мира сего</title>
 </head>
 
-<body>
+<body class="container">
   <header class="header">
     <p class="header__name">Международное движение развития личности</p>
     <h1 class="header__title">Счастливые мира сего</h1>
@@ -27,7 +28,7 @@
   </header>
 
   <section class="audience">
-    <h2 class="page-title audience__title">Для кого этот коучинг
+    <h2 class="page-title audience__title"><a name="1"></a>Для кого этот коучинг
     </h2>
     <ul class="audience__list">
       <li class="audience__item">Для лидеров
@@ -57,18 +58,16 @@
       </p>
       </li>
     </ul>
-    
-    <img src="" alt="" class="audience__img">
   </section>
   
   <section class="stop">
     <h2 class="page-title stop__title">Остановись</h2>
     <p class="stop__name">Если бы ты мог остановиться, то увидел, что ты</p>
     <ul class="stop__list">
-      <li class="stop__item">Зажат разнообраными "Должен" без доступа в пространство "Я хочу"</li>
-      <li class="stop__item">Откладываешь все действительно важное на недостижимое "потом"</li>
-      <li class="stop__item">Отказываешь себе в хобби, общении, веселье и простых удовольствиях</li>
-      <li class="stop__item">
+      <li class="stop__item stop__item--pen">Зажат разнообраными "Должен" без доступа в пространство "Я хочу"</li>
+      <li class="stop__item stop__item--clock">Откладываешь все действительно важное на недостижимое "потом"</li>
+      <li class="stop__item stop__item--mount">Отказываешь себе в хобби, общении, веселье и простых удовольствиях</li>
+      <li class="stop__item stop__item--face">
         <ul class="stop__item-list">
           <li>Истощен духовно и физически</li>
           <li>Темп твоей жизни ускоряется, а радости все меньше</li>
@@ -77,7 +76,7 @@
         </ul>
       </li>
       <li class="stop__item">
-        <ul class="stop__item-list">
+        <ul class="stop__item-list stop__item--horse">
           <li>Бежишь по инерции</li>
           <li>Не чувствуешь радости</li>
           <li>Измеряешь качество дня усталостью</li>
@@ -86,30 +85,33 @@
     </ul>
     <div class="stop__text">Ты об этом мечтал?<p>А ты вообще знаешь, какой ты и что действительно твое?</p>
     </div>
-  </section>
   
   <article class="promo">
     <div class="promo__text">
-      Вот твой уникальный шанс стать счастливым и создать свою жизнь такой, какой хочешь именно ты. 
+      Вот <br>твой уникальный шанс<br> стать счастливым и создать свою жизнь такой, какой хочешь<br> именно ты 
     </div>
-    <a href="#" class="button promo__button">Начать сейчас</a>
   </article>
+  <a href="#" class="button stop__button">Начать сейчас</a>
+</section>
   
   <section class="nature">
-    <h2 class="nature__title page-title">Природа счастья</h2>
+    <h2 class="nature__title page-title"><a name="2"></a>Природа счастья</h2>
     <ul class="nature__list">
+     <p class="nature__ask">Счастливый это как?</p>
       <li class="nature__item">Знает себя, реализуется и потому успешен в своем деле, семье и жизни</li>
-      <li class="nature__item">Просто "успешный" - редко равно "счастливый". А вот счастливый успешен по-настоящему</li>
+      <li class="nature__item">Просто "успешный" - редко равно "счастливый". <br>А вот счастливый успешен по-настоящему</li>
       <li class="nature__item">Исследования подтвердили, что счастье - это не результат, а процесс.</li>
-      <li class="nature__item">Жить прямо сейчас, а не откладывать удовольствия на потом.</li>
+      <li class="nature__item">Жить прямо сейчас, а не откладывать<br> удовольствия на потом.</li>
       <li class="nature__item">Это наслаждаться движением к своим целям, чувствовать свою нужность и пользу.</li>
-      <li class="nature__item">Радоваться общению и иметь свободу проявить себя во всех сферах жизни.</li>
+      <li class="nature__item">Радоваться общению и иметь свободу <br>проявить себя во всех сферах жизни.</li>
     </ul>
     <div class="nature__promo advantages">
-      <h3 class="advantages__title">
+     <div class="promo">
+      <p class="promo__title">
         Почему же на пути к твоему счастью нужен коуч?
-      </h3>
-      <p class="advantages__text">Без проводника пройти этот путь невозможно - так устроен мозг.</p>
+      </p>
+      <p class="promo__text">Без проводника пройти этот путь невозможно - так устроен мозг.</p>
+      </div>
       <span class="advantages__info">Чтобы создать значимые изменения необходимо:</span>
       <ul class="advantages__list">
         <li class="advantages__item">обойти множество внутренних ловушек</li>
@@ -120,16 +122,16 @@
         <li class="advantages__item">развивать осознанность</li>
       </ul>
       
-      <div class="advantages__promo">
-        <p>Это только кажется, что просто - ты удивишься, насколько несвободен, и потому не так счастлив и не так успешен. Важно определить, какие цели и желания твои истинные, а какие навязаны извне.</p>
+      <div class="promo advantages__promo">
+        <p>Это только кажется, что просто - ты удивишься, насколько несвободен, и потому не<br> так счастлив и не так успешен.<br> Важно определить, какие цели и желания твои истинные, а какие навязаны извне.</p>
       </div>
       
-      <a href="#" class="butoon advantages__button">Начать сейчас</a>
+      <a href="#" class="button advantages__button">Начать сейчас</a>
     </div>
   </section>
   
   <section class="results">
-    <h2 class="results__title page-title">Результаты и гарантии</h2>
+    <h2 class="results__title page-title"><a name="3"></a>Результаты и гарантии</h2>
     <span class="results__name">"Изменения не возможны - они неизбежны!"</span>
     <p class="results__text">в основе коучинга лежит принцип гения работы с личностью Милтона Эриксона.
     <span>В процесс нашей работы ты действительно найдешь для себя, как:</span>
@@ -204,7 +206,7 @@
   </section>
   
   <section class="options">
-    <h2 class="options__title page-title">Маршруты</h2>
+    <h2 class="options__title page-title"><a name="6"></a>Маршруты</h2>
     <p class="options__name">Какую цену ты платишь за жизнь, которая могла бы быть лучше?
     <span>Я предлагаю следующие результаты и маршруты движения к ним:</span></p>
     
@@ -268,7 +270,7 @@
   </section>
   
   <section class="time">
-    <h2 class="time__title page-title">Почему сейчас?</h2>
+    <h2 class="time__title page-title"><a name="5"></a>Почему сейчас?</h2>
     <p class="time__name">А когда?</p>
     <ul class="time__lisе">
       <li class="time__item">Давай честно, 25, 30 или 35 лет тобой уже прожито. Все так, как ты хотел?</li>
@@ -281,8 +283,101 @@
     <span class="time__promo">Если ты прямо сейчас ничего не предпримешь, то уже ничего никогда не изменится. Представь, что ты живешь в этом режиме еще год, три, пять, десять... Что тогда есть в твоей жизни из того, что тебе не нравится? И чего нет из того, о чем мечтаешь?</span>
     
     <p class="time__text">Ты думаешь, что еще много времени, ты успеешь?
-    70 лет - средняя продолжительность жизни человека в Россииуп9</p>
+    70 лет - средняя продолжительность жизни человека в России</p>
+    
+    <div class="time__stats">
+      25 лет - уйдет на сон
+      4 года - на еду
+      5 лет - на транспорт
+      10 лет - на работу
+      9 лет - на социальные сети, ТВ и видеоигры <sup>*</sup>
+      <span><sup>*</sup>данные Бюро трудовой статистики при World Bank</span>
+    </div>
+    
+    <article class="question">
+      <p class="question__name">Не страшно?</p>
+      <p class="question__text">Для большинства время так и уйдет напрасно, многие желания и возможности останутся недостижимыми. а потом будет слишком поздно</p>
+      <p class="question__promo">И это еще один веский повод</p>
+    </article>
+    
+    <a href="" class="time__button button">Начать сейчас</a>
   </section>
+  
+  <section class="author">
+    <h2 class="author__title page-title"><a name="4"></a>Автор программы</h2>
+    <p class="author__name">Автор этой программы - Олеся Аргеткина, Профессиональный коуч по стандартам ICF, автор программы "Нейропсихология успеха" и движения-миссии "Счастливые люди", репутационный эксперт и счастливая Муза.</p>
+    
+    <div class="author__info">
+      <img src="" alt="" class="author__photo">
+      <p class="author__text">"Многие годы я изучала природу счастья и биологию достижений. Почему первые достигают и развиваются, а вторые нет. И собрала методы и инструменты, чтобы помочь вам стать этими "первыми".
+      В своей работе я опираюсь на нейрофизиологические основания коучинга. Это позволяет моим клиентам приходить к реальному решению и получать долгосрочный эффект для целей и изменений.
+      Почему настоящим успехом я считаю счастье и откровенную историю моего пути ты можешь <a href="#" class="author__link">прочитать здесь</a>"</p>
+    </div>
+    
+    <ul class="author__list">
+      <li class="author__item">10 лет
+        <p>в коммуникациях и консалтинге</p>
+      </li>
+      <li class="author__item">Нейрокоуч
+        <p>Сертифицированный Эриксоновский коуч</p>
+      </li>
+      <li class="author__item">7 лет
+        <p>на популярном федеральном ТВ</p>
+      </li>
+      <li class="author__item">>1000 интервью
+        <p>с государственными политиками, топ-менеджерами, звездами науки, спорта и шоу-бизнеса</p>
+      </li>
+    </ul>
+    
+    <ul class="author__past">
+      <li class="author__exp">Оставила топ-менеджмент одного из крупнейших банков ради мечты</li>
+      <li class="author__exp">Мастер прорывных изменений и автор собственной жизни</li>
+      <li class="author__exp">Экс-чиновник, руководитель специальных и международных проектов</li>
+      <li class="author__exp">Живу здесь и сейчас, развивая любимое дело</li>
+      <li class="author__exp">Награждена Благодарственным письмом Президента РФ</li>
+      <li class="author__exp">Помогаю смелым людям освободить, реализовать себя и стать счастливее</li>
+    </ul>  
+    
+    <p class="author__warning">Осторожно! Мой коучинг может изменить жизнь</p>
+    
+    <div class="author__qualification">
+      <p>Моя квалификация</p>
+      <img src="" alt="" class="aithor__diplom">
+      <img src="" alt="" class="aithor__diplom">
+      <img src="" alt="" class="aithor__diplom">
+      <img src="" alt="" class="aithor__diplom">
+      <img src="" alt="" class="aithor__diplom">
+      <img src="" alt="" class="aithor__diplom">
+    </div>
+    
+    <div class="author__mission">
+      <p>"Счастливые мира сего" - моя миссия.Только реализованный, осознанные и счастливые люди способны развивать мир и менять его к лучшему.</p>
+    </div>
+    </section>
+    
+    <article class="gallery">
+      <h3 class="gallery__title">Моя жизнь</h3>
+      <img src="" alt="" class="gallery__photo">
+      <img src="" alt="" class="gallery__photo">
+      <img src="" alt="" class="gallery__photo">
+      <img src="" alt="" class="gallery__photo">
+      <img src="" alt="" class="gallery__photo">
+      <img src="" alt="" class="gallery__photo">
+    </article>
+    
+    <footer class="feedback">
+      <p class="feedback__title">Остались вопросы? напиши мне, Олесе Аргеткиной.</p>
+      
+      <ul class="feedback__list">
+        <li class="feedback__item"><a href="#" class="feedback__link">Вконтакте</a></li>
+        <li class="feedback__item"><a href="#" class="feedback__link">инстаграм</a></li>
+        <li class="feedback__item"><a href="#" class="feedback__link">Фейсбук</a></li>
+      </ul>
+      
+      <p>Встретимся в социальных сетях!</p>
+      
+      <a href="#" class="feedback__button button">Начать сейчас</a>
+    </footer>
 </body>
 
 </html>

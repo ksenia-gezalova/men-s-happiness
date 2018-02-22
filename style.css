@@ -1,0 +1,265 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Myriad Pro";
+  font-weight: 400;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button {
+  display: block;
+  font: inherit;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 25px;
+  text-decoration: none;
+  width: 305px;
+  color: #ffffff;
+  font-size: 21px;
+  background: linear-gradient(135deg, #009ea0 0%, #7db9e8 20%, #722599 55%, #008040 100%);
+  margin: 0 auto;
+}
+
+.container {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+.header {
+  background-image: url("img/header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 22px;
+  padding-left: 150px;
+}
+.header__name {
+  font-size: 25px;
+  margin: 0;
+  margin-bottom: 55px;
+}
+
+.header__title {
+  color: #331db3;
+  font-size: 100px;
+  font-weight: 300;
+  font-family: "Myriad Pro";
+  line-height: 1.2em;
+  text-align: left;
+  width: 50%;
+}
+
+.header__text {
+  color: #6666cc;
+  font-size: 30px;
+  line-height: 1.8em;
+  width: 50%;
+    
+}
+
+.header__text .text-green {
+  color: #009933;
+}
+
+.header__button {
+  margin-top: 50px;
+  margin-left: 400px;
+}
+
+.header__nav {
+  display: block;
+  list-style: none;
+  display: flex;
+  background: linear-gradient(135deg, #009ea0 0%, #7db9e8 20%, #722599 55%, #008040 100%);
+  padding: 30px;
+  margin-left: -150px;
+  margin-top: 15px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.header__link {
+  border-right: 2px solid #ffffff;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.header__link a {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.page-title {
+  text-align: center;
+  color: #ffffff;
+  background-color: #7fc569;
+  font-size: 50px;
+  line-height: 20px;
+  padding: 25px;
+  font-weight: 400;
+}
+
+.audience {
+  background-image: url("img/promo.png");
+  padding-bottom: 735px;
+  margin-bottom: 40px;
+}
+
+.audience__list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+
+.audience__item {
+  display: block;
+  border: 1px solid #c3ced6;
+  border-radius: 5px;
+  color: #2d1094;
+  background-color: transparent;
+  text-align: center;
+  padding: 20px;
+  width: 370px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.audience__item p {
+  color: black;
+  font-size: 18px;
+}
+.stop__name {
+  color: #412cb8;
+  text-align: center;
+  font-size: 21px;
+}
+
+.stop__list {
+  display: flex;
+  flex-direction: column; 
+  padding: 40px
+}
+
+.stop__item:nth-child(2n) {
+  text-align: right;
+}
+
+.stop__item {
+  border-bottom: 1px dashed #000000;
+}
+
+.stop__text {
+  text-align: center;
+}
+
+.promo {
+  text-align: center;
+  background-color: #19afd1;
+  color: #ffffff;
+  padding: 30px;
+  font-size: 30px;
+  margin-bottom: 45px;
+}
+
+.stop {
+  margin-bottom: 30px;
+}
+
+.nature__list {
+  background: linear-gradient(to bottom, #add4f2 0%, #ffffff 100%);
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.nature__item:nth-child(2n+1) {
+  text-align: right;
+}
+
+.nature__ask {
+  text-align: center;
+  font-size: 28px;
+}
+
+.promo__title {
+  font-size: 37px;
+}
+
+
+
+.advantages__info {
+  text-align: center;
+  display: block;
+  border-bottom: 1px dashed #000000;
+}
+
+
+
+.advantages__list {
+  list-style: none;
+  padding: 40px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages__item:nth-child(2n) {
+  text-align: right;
+}
+
+
+
+.nature {
+  margin-bottom: 40px;
+}
