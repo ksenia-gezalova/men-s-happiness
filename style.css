@@ -23,7 +23,7 @@ h4 {
 }
 
 body {
-  font-family: "Myriad Pro";
+  font-family: "Roboto", "Arial", "Verdana", sans-serif;
   font-weight: 400;
   font-size: 14px;
 }
@@ -322,6 +322,7 @@ input[type="radio"].visually-hidden {
 }
 
 .advantages__list {
+  position: relative;
   list-style: none;
   width: 80%;
   padding-top: 20px;
@@ -339,6 +340,30 @@ input[type="radio"].visually-hidden {
 
 .advantages__item {
   margin-bottom: 60px;
+}
+
+.advantages__item:nth-child(2n+1)::after {
+  content: "";
+  width: 173px;
+  height: 108px;
+  background-image: url("img/arrow-long-right.png");
+  display: block;
+  position: absolute;
+  left: 500px;
+}
+
+.advantages__item:nth-child(2n)::after {
+  content: "";
+  width: 173px;
+  height: 108px;
+  background-image: url("img/arrow-long-left.png");
+  display: block;
+  position: absolute;
+  left: 500px;
+}
+
+.advantages__item:last-child::after {
+ display: none;
 }
 
 .advantages__item:nth-child(2n) {
@@ -500,15 +525,16 @@ input[type="radio"].visually-hidden {
 
 .results__banner p {
   display: block;
-  margin-left: 60px;
 }
 
 .results__banner::before {
   content: "";
-  width: 180px;
+  width: 300px;
   height: 169px;
   background-image: url("img/icon.png");
   display: block;
+  background-repeat: no-repeat;
+  flex-shrink: 0;
 }
 
 .score__title {
@@ -569,11 +595,12 @@ input[type="radio"].visually-hidden {
 
 .score__item::before {
   content: "";
-  width: 46px;
+  width: 97px;
   height: 45px;
   background-image: url("img/finger-small.png");
   display: block;
-  margin-right: 15px;
+  background-repeat: no-repeat;
+  flex-shrink: 0;
 }
 
 .score__text {
@@ -618,7 +645,7 @@ input[type="radio"].visually-hidden {
 .options__promo {
   color: #2d1094;
   text-align: center;
-  font-size: 24px;
+  font-size: 22px;
   position: relative;
   padding-bottom: 80px;
 }
@@ -659,6 +686,7 @@ input[type="radio"].visually-hidden {
   background-image: url("img/vk-icon.png");
   display: block;
   margin-right: 10px;
+  flex-shrink: 0;
 }
 
 .time__name {
@@ -785,6 +813,7 @@ input[type="radio"].visually-hidden {
 .author__photo {
   height: 520px;
   width: 520px;
+  flex-shrink: 0;
 }
 
 .author__text {
@@ -855,21 +884,23 @@ input[type="radio"].visually-hidden {
 .author__exp:nth-child(2n+1)::after {
   content: "";
   background-image: url("img/icon-star.png");
-  width: 45px;
+  width: 63px;
   height: 37px;
   display: block;
   margin-left: 20px;
   background-repeat: no-repeat;
+  flex-shrink: 0;
 }
 
 .author__exp:nth-child(2n)::before {
   content: "";
   background-image: url("img/icon-star.png");
-  width: 45px;
+  width: 63px;
   height: 37px;
   display: block;
   margin-right: 20px;
   background-repeat: no-repeat;
+  flex-shrink: 0;
 }
 
 .author__exp:nth-child(2n + 1) {
