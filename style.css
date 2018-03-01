@@ -62,15 +62,15 @@ input[type="radio"].visually-hidden {
   border: 1px solid transparent;
   border-radius: 8px;
   cursor: pointer;
-  padding: 25px;
+  padding: 21px;
   text-decoration: none;
   width: 305px;
   color: #ffffff;
   font-size: 21px;
-  background: -webkit-linear-gradient(315deg, #009ea0 0%, #7db9e8 20%, #722599 55%, #008040 100%);
-  background: -o-linear-gradient(315deg, #009ea0 0%, #7db9e8 20%, #722599 55%, #008040 100%);
-  background: linear-gradient(135deg, #009ea0 0%, #7db9e8 20%, #722599 55%, #008040 100%);
   margin: 0 auto;
+  background-image: url("img/button-bg.png");
+  background-repeat: no-repeat;
+  letter-spacing: 0.5px;
 }
 
 .button:hover {
@@ -136,16 +136,18 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: -webkit-linear-gradient(315deg, #009ea0 0%, #7db9e8 20%, #722599 55%, #008040 100%);
-  background: -o-linear-gradient(315deg, #009ea0 0%, #7db9e8 20%, #722599 55%, #008040 100%);
-  background: linear-gradient(135deg, #009ea0 0%, #7db9e8 20%, #722599 55%, #008040 100%);
-  padding: 30px;
+  //background: -webkit-linear-gradient(315deg, #009ea0 0%, #7db9e8 20%, #722599 55%, #008040 100%);
+  //background: -o-linear-gradient(315deg, #009ea0 0%, #7db9e8 20%, #722599 55%, #008040 100%);
+  //background: linear-gradient(135deg, #009ea0 0%, #7db9e8 20%, #722599 55%, #008040 100%);
+  background-image: url("img/menu-bg.png");
+  background-repeat: no-repeat;
+  padding: 25px;
   margin-left: -150px;
   margin-top: 15px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .header__link {
@@ -232,9 +234,11 @@ input[type="radio"].visually-hidden {
   list-style: none;
   width: 80%;
   margin: 0 auto;
+  counter-reset: dotCounter;
 }
 
 .stop__item {
+  position: relative;
   padding-bottom: 15px;
   padding-left: 40px;
   padding-right: 40px;
@@ -489,6 +493,7 @@ input[type="radio"].visually-hidden {
 
 .guarantee__text {
   font-size: 23px;
+  padding-left: 40px;
 }
 
 .guarantee__name {
@@ -521,6 +526,7 @@ input[type="radio"].visually-hidden {
       -ms-flex-align: center;
           align-items: center;
   padding-left: 80px;
+  letter-spacing: 0.5px;
 }
 
 .results__banner p {
@@ -534,7 +540,8 @@ input[type="radio"].visually-hidden {
   background-image: url("img/icon.png");
   display: block;
   background-repeat: no-repeat;
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .score__title {
@@ -600,7 +607,8 @@ input[type="radio"].visually-hidden {
   background-image: url("img/finger-small.png");
   display: block;
   background-repeat: no-repeat;
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .score__text {
@@ -686,7 +694,8 @@ input[type="radio"].visually-hidden {
   background-image: url("img/vk-icon.png");
   display: block;
   margin-right: 10px;
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .time__name {
@@ -813,7 +822,8 @@ input[type="radio"].visually-hidden {
 .author__photo {
   height: 520px;
   width: 520px;
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .author__text {
@@ -841,7 +851,7 @@ input[type="radio"].visually-hidden {
 .author__item {
   text-align: center;
   color: #ff0066;
-  font-size: 30px;
+  font-size: 50px;
   font-weight: bold;
 }
 
@@ -889,7 +899,8 @@ input[type="radio"].visually-hidden {
   display: block;
   margin-left: 20px;
   background-repeat: no-repeat;
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .author__exp:nth-child(2n)::before {
@@ -900,7 +911,8 @@ input[type="radio"].visually-hidden {
   display: block;
   margin-right: 20px;
   background-repeat: no-repeat;
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .author__exp:nth-child(2n + 1) {
@@ -1225,9 +1237,10 @@ input[type="radio"].visually-hidden {
   margin-bottom: 20px;
 }
 
-.option__item b {
+.fat-text {
   color: #2d1094;
   font-size: 30px;
+  display: block;
 }
 
 .option__desc {
@@ -1402,4 +1415,8 @@ input[type="radio"].visually-hidden {
 
 .feedback__button {
   margin-top: 90px;
+}
+
+.dot {
+ margin-right: 5px;
 }
