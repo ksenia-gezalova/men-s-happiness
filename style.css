@@ -817,6 +817,9 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .author__photo {
@@ -1266,6 +1269,11 @@ input[type="radio"].visually-hidden {
   margin-top: 10px;
   -ms-flex-item-align: start;
       align-self: flex-start;
+  background-color: transparent;
+}
+
+.hidden {
+  display: none;
 }
 
 .option__link:hover {
